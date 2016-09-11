@@ -4,6 +4,8 @@
 #define uint unsigned int
 #define uchar unsigned char
 
+bit theftModeSwitch=0;
+
 //P2口用作独立操作输入
 
 sbit fanInput=P2^0;  //空调在P2^0输入
@@ -29,3 +31,4 @@ sbit waterOutput=P1^2;  //水泵在P1^2输出
 sbit dinnerLightOutput=P1^3;  //餐厅灯光在P1^3输出
 sbit bedLightOutput=P1^4;  //卧室灯光在P1^4输出
 sbit beep=P1^5;//喇叭在P1^5输出
+sbit theftBeep=P1^6;
