@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+G:\match\51\match.uvproj
+Project File Date:  09/10/2016
+
+<h2>Output:</h2>
+Rebuild target 'Target 1'
+compiling main.c...
+main.c(1): warning C500: LICENSE ERROR (R207(3): REGISTRY READ ERROR)
+main.c(1): warning C318: can't open file 'reg2.h'
+main.c(7): warning C316: unterminated conditionals
+linking...
+Program Size: data=9.0 xdata=0 code=16
+creating hex file from "match"...
+"match" - 0 Error(s), 3 Warning(s).
+Rebuild target 'Target 1'
+compiling main.c...
+main.c(1): warning C500: LICENSE ERROR (R207(3): REGISTRY READ ERROR)
+main.c(7): warning C316: unterminated conditionals
+linking...
+Program Size: data=9.0 xdata=0 code=16
+creating hex file from "match"...
+"match" - 0 Error(s), 2 Warning(s).
