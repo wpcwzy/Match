@@ -33,6 +33,7 @@ sbit bedLightOutput=P1^4;  //卧室灯光在P1^4输出
 sbit beep=P1^5;//喇叭在P1^5输出
 
 uchar mainFunction=0;//默认程序设置，0为防盗模式，1为欢迎模式，2为起居模式，3为用餐模式，默认为0
+uchar theftModeDelay=2;//防盗模式触发延时，单位为秒，默认为2
 uchar doorCloseTime=6;//关门报警时间，单位为秒，默认为6
 bit debugCom=1;//勿动
 bit operationalPriorities=0;//操作优先级，0为手动优先，1为远程优先，默认为0

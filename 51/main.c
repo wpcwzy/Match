@@ -57,23 +57,28 @@ void bedLight()
 
 void theftMode()
 {
-	if(theftModeSwitch==1)
+    if(manSensorInput==1)
 	{
-		if(manSensorInput==1)
+		delay(theftModeDelay);
+		if(mamSensorInput==1)
 		{
-			delay(2000);
-			if(mamSensorInput==1)
-			{
-				beep==1;
-				theftBeep==0;
-			}
+			beep=0;
 		}
 	}
 }
 
 void doorNotClose()
 {
-	;//未知驱动电平，来货时填写*****************************************************************************
+	if(doorSensorInput==1)
+	{
+		delay(doorCloseTime)
+		{
+			if(doorSensorInput==1)
+			{
+				beep=1;
+			}
+		}
+	}
 }
 
 void welcomeMode()
@@ -113,5 +118,25 @@ void swither()
 	{
 		theftModeSwitch=0;
 		theftMode();
+	}
+}
+
+void modeSwitcher()
+{
+	switcher();	
+	fan();
+	livingLight();
+	water();
+	dinnerLight();
+	bedLight();
+	doorNotClose();
+}
+
+void main()
+{
+	initIO();
+	while(1)
+	{
+		modeSwitcher();
 	}
 }
